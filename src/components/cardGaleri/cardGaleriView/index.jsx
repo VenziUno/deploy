@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const CardViewGaleri = ({ toggleOpenGaleri, id }) => {
-  console.log(id);
+  
   const data = [
     {
       4: {
@@ -69,45 +69,6 @@ const CardViewGaleri = ({ toggleOpenGaleri, id }) => {
           "IMG_1210.jpg",
         ],
       },
-      8: {
-        title: "/galery/7",
-        image: [
-          "WhatsApp Image 2022-08-16 at 12.15.03.jpeg",
-          "WhatsApp Image 2022-08-16 at 12.15.05.jpeg",
-          "WhatsApp Image 2022-08-16 at 12.15.06.jpeg",
-          "WhatsApp Image 2022-08-16 at 12.16.38.jpeg",
-          "WhatsApp Image 2022-08-16 at 13.44.29.jpef",
-          "WhatsApp Image 2022-08-16 at 13.44.30.jpeg",
-          "WhatsApp Image 2022-08-16 at 13.44.31 (1).jpeg",
-          "WhatsApp Image 2022-08-19 at 09.28.19.jpeg",
-          "WhatsApp Image 2022-08-19 at 09.28.20.jpeg",
-          "WhatsApp Image 2022-08-19 at 09.29.01.jpeg",
-          "WhatsApp Image 2022-08-19 at 09.29.01.jpeg",
-          "WhatsApp Image 2022-08-19 at 12.11.00.jpeg",
-          "WhatsApp Image 2022-08-19 at 12.11.01.jpeg",
-          "2022-08-16 at 4.20.56 PM.jpeg",
-          "2022-08-16 at 4.21.50 PM.jpeg",
-          "20220812_091013.jpg",
-          "20220812_110516.jpg",
-          "3.jpg",
-          "4.jpg",
-          "5.jpg",
-          "6.jpg",
-          "7.jpg",
-          "8.jpg",
-          "9.jpg",
-          "10.jpg",
-          "11.jpg",
-          "12.jpg",
-          "13.jpg",
-          "14.jpg",
-          "15.jpg",
-          "16.jpg",
-          "17.jpg",
-          "18.jpg",
-          "19.jpg",
-        ],
-      },
       3: {
         title: "/galery/3",
         image: [
@@ -156,19 +117,6 @@ const CardViewGaleri = ({ toggleOpenGaleri, id }) => {
           "43.jpg",
           "44.jpg",
           "45.jpg",
-        ],
-      },
-      6: {
-        title: "/galery/5",
-        image: [
-          "20220711_090446.jpg",
-          "20220711_090620.jpg",
-          "20220711_090653.jpg",
-          "20220711_092346.jpg",
-          "20220711_092409.jpg",
-          "20220711_092440.jpg",
-          "20220711_092607.jpg",
-          "20220711_101850.jpg",
         ],
       },
       9: {
@@ -223,12 +171,21 @@ const CardViewGaleri = ({ toggleOpenGaleri, id }) => {
           "47.jpg",
         ],
       },
-      2: {
-        title: "/galery/6",
-        image: ["IMG_8236.jpg", "IMG_8239.jpg", "IMG_8242.jpg"],
+      6: {
+        title: "/galery/5",
+        image: [
+          "20220711_090446.jpg",
+          "20220711_090620.jpg",
+          "20220711_090653.jpg",
+          "20220711_092346.jpg",
+          "20220711_092409.jpg",
+          "20220711_092440.jpg",
+          "20220711_092607.jpg",
+          "20220711_101850.jpg",
+        ],
       },
       7: {
-        title: "/galery/7",
+        title: "/galery/8",
         image: [
           "IMG_2015.jpg",
           "IMG_2025.jpg",
@@ -248,6 +205,49 @@ const CardViewGaleri = ({ toggleOpenGaleri, id }) => {
           "IMG_2229.jpg",
         ],
       },
+      8: {
+        title: "/galery/7",
+        image: [
+          "WhatsApp Image 2022-08-16 at 12.15.03.jpeg",
+          "WhatsApp Image 2022-08-16 at 12.15.05.jpeg",
+          "WhatsApp Image 2022-08-16 at 12.15.06.jpeg",
+          "WhatsApp Image 2022-08-16 at 12.16.38.jpeg",
+          "WhatsApp Image 2022-08-16 at 13.44.29.jpef",
+          "WhatsApp Image 2022-08-16 at 13.44.30.jpeg",
+          "WhatsApp Image 2022-08-16 at 13.44.31 (1).jpeg",
+          "WhatsApp Image 2022-08-19 at 09.28.19.jpeg",
+          "WhatsApp Image 2022-08-19 at 09.28.20.jpeg",
+          "WhatsApp Image 2022-08-19 at 09.29.01.jpeg",
+          "WhatsApp Image 2022-08-19 at 09.29.01.jpeg",
+          "WhatsApp Image 2022-08-19 at 12.11.00.jpeg",
+          "WhatsApp Image 2022-08-19 at 12.11.01.jpeg",
+          "2022-08-16 at 4.20.56 PM.jpeg",
+          "2022-08-16 at 4.21.50 PM.jpeg",
+          "20220812_091013.jpg",
+          "20220812_110516.jpg",
+          "3.jpg",
+          "4.jpg",
+          "5.jpg",
+          "6.jpg",
+          "7.jpg",
+          "8.jpg",
+          "9.jpg",
+          "10.jpg",
+          "11.jpg",
+          "12.jpg",
+          "13.jpg",
+          "14.jpg",
+          "15.jpg",
+          "16.jpg",
+          "17.jpg",
+          "18.jpg",
+          "19.jpg",
+        ],
+      },
+      2: {
+        title: "/galery/6",
+        image: ["IMG_8236.jpg", "IMG_8239.jpg", "IMG_8242.jpg"],
+      }, 
       5: {
         title: "/galery/9",
         image: ["IMG_5051.jpg", "IMG_5059.jpg", "IMG_5060.jpg", "IMG_5062.jpg"],
@@ -260,8 +260,7 @@ const CardViewGaleri = ({ toggleOpenGaleri, id }) => {
 
   return (
     <>
-      <div className=" fixed z-40 left-0 py-8 top-0 w-full h-full bg-black/80">
-        <div className="">
+      <div className=" fixed z-40 left-0 flex justify-center items-center top-0 w-full h-full bg-black/80">
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
@@ -273,7 +272,7 @@ const CardViewGaleri = ({ toggleOpenGaleri, id }) => {
             }}
             navigation={true}
             modules={[Keyboard, Pagination, Navigation]}
-            className="w-[1000px] h-[700px]"
+            className="w-[800px] h-[500px]"
           >
             {gallery.image.map((imageName, imageIndex) => (
               <SwiperSlide
@@ -290,14 +289,13 @@ const CardViewGaleri = ({ toggleOpenGaleri, id }) => {
                   loading="lazy"
                   src={`${gallery.title}/${imageName}`}
                   alt={`Image ${imageIndex}`}
-                  width={2000}
-                  height={2000}
+                  width={800}
+                  height={400}
                   className="w-full h-full block p-12 rounded-xl"
                 />
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
       </div>
     </>
   );

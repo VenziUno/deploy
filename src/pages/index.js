@@ -16,16 +16,11 @@ export default function Home() {
             name="google-site-verification"
             content="1IoMsnjXW83fFpZ0YlMFU9EBukvRQvLCXK0nFuXxlrI"
           />
-          {/* Page title */}
           <title>SDS Kristen Tabqha - Sekolah Dasar Kristen Tabqha</title>
-
-          {/* Meta tags */}
           <meta
             name="description"
             content="Selamat datang di SDS Kristen Tabqha, sekolah dasar Kristen berkualitas yang memberikan pendidikan unggul dengan pendekatan holistik."
           />
-
-          {/* Open Graph tags */}
           <meta
             property="og:title"
             content="SDS Kristen Tabqha - Sekolah Dasar Kristen Tabqha"
@@ -39,24 +34,14 @@ export default function Home() {
             property="og:url"
             content="https://www.sdskristentabqha.sch.id"
           />
-
-          {/* Canonical URL */}
           <link rel="canonical" href="https://www.sdskristentabqha.sch.id" />
         </Head>
-        {/* {isOpenGaleri ? (
-          <div className="absolute flex py-10 z-30 w-full h-full bg-black/80 overflow-y-hidden" />
-        ) : (
-          <></>
-        )} */}
         <Layout>
           <HeroSection />
           <SekilasInfo />
           <VisiDanMisi />
           <Struktur />
-          <Galeri
-            // toggleOpenGaleri={toggleOpenGaleri}
-            // isOpenGaleri={isOpenGaleri}
-          />
+          <Galeri />
         </Layout>
       </div>
     </>

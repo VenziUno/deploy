@@ -1,14 +1,7 @@
 import CardGaleri from "@/components/cardGaleri";
 import React, { useState } from "react";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Keyboard, Pagination, Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/effect-flip";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
-const Galeri = ({ toggleOpenGaleri, isOpenGaleri }) => {
+const Galeri = () => {
   
   const [isOpen, setIsOpen] = useState(false);
 
@@ -43,7 +36,7 @@ const Galeri = ({ toggleOpenGaleri, isOpenGaleri }) => {
                 />
                 <CardGaleri
                   id="3"
-                  cover={"/galery/3/DSC09704.jpg"}
+                  cover={"/galery/3/1.jpg"}
                   title={"Kegiatan Berenang"}
                   date={"Selasa, 21 Juni 2024"}
                 />
@@ -75,24 +68,21 @@ const Galeri = ({ toggleOpenGaleri, isOpenGaleri }) => {
                     cover={"/galery/8/IMG_2038.jpg"}
                     title={"Paskah"}
                     date={"Selasa, 21 Juni 2024"}
-
                   />
                   <CardGaleri
                     id="8"
-                    cover={"/galery/7/IMG_5797.jpg"}
+                    cover={"/galery/7/3.jpg"}
                     title={"Perayaan Hari-Hari Besar"}
                     date={"Selasa, 21 Juni 2024"}
                   />
                   <CardGaleri
                     id="9"
-                    cover={"/galery/4/20220930_083538.jpg"}
+                    cover={"/galery/4/1.jpg"}
                     title={"Senam Pagi"}
                     date={"Selasa, 21 Juni 2024"}
                   />
                 </div>
-              ) : (
-                ""
-              )}
+              ) : <></>}
               <button
                 className="border border-black rounded px-4 py-1"
                 onClick={toggleOpen}
