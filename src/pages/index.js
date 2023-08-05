@@ -28,6 +28,7 @@ export default function Home() {
         <meta property="og:description" content="Selamat datang di SDS Kristen Tabqha, sekolah dasar Kristen berkualitas yang memberikan pendidikan unggul dengan pendekatan holistik." />
         <meta property="og:image" content="/path/to/og-image.jpg" />
         <meta property="og:url" content="https://www.sdskristentabqha.sch.id" />
+        <meta name="google-site-verification" content="1IoMsnjXW83fFpZ0YlMFU9EBukvRQvLCXK0nFuXxlrI" />
         
         {/* Canonical URL */}
         <link rel="canonical" href="https://www.sdskristentabqha.sch.id" />
