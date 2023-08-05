@@ -5,6 +5,7 @@ import Galeri from "./galeri";
 import SekilasInfo from "./sekilasInfo";
 import HeroSection from "./heroSection";
 import { useState } from "react";
+import Head from "next/head";
 
 export default function Home() {
   const [isOpenGaleri, setIsOpenGaleri] = useState(false);
@@ -15,6 +16,22 @@ export default function Home() {
   return (
     <>
       <div className="relative">
+      <Head>
+        {/* Page title */}
+        <title>SDS Kristen Tabqha - Sekolah Dasar Kristen Tabqha</title>
+        
+        {/* Meta tags */}
+        <meta name="description" content="Selamat datang di SDS Kristen Tabqha, sekolah dasar Kristen berkualitas yang memberikan pendidikan unggul dengan pendekatan holistik." />
+        
+        {/* Open Graph tags */}
+        <meta property="og:title" content="SDS Kristen Tabqha - Sekolah Dasar Kristen Tabqha" />
+        <meta property="og:description" content="Selamat datang di SDS Kristen Tabqha, sekolah dasar Kristen berkualitas yang memberikan pendidikan unggul dengan pendekatan holistik." />
+        <meta property="og:image" content="/path/to/og-image.jpg" />
+        <meta property="og:url" content="https://www.sdskristentabqha.sch.id" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://www.sdskristentabqha.sch.id" />
+      </Head>
         {isOpenGaleri ? (
           <div className="absolute flex py-10 z-30 w-full h-full bg-black/80 overflow-y-hidden" />
         ) : (
