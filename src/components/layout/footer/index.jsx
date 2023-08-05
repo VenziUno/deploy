@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import { ImLocation2 } from "react-icons/im";
-import { HiMail } from "react-icons/hi";
-import { IoCallSharp } from "react-icons/Io5";
-import { FaFacebookF } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+// import { ImLocation2 } from "react-icons/im";
+// import { HiMail } from "react-icons/hi";
+// import { IoCallSharp } from "react-icons/Io5";
+// import { FaFacebookF } from "react-icons/fa";
+// import { AiFillInstagram } from "react-icons/ai";
 import YouTube from "react-youtube";
 import Link from "next/link";
 const Footer = () => {
@@ -57,15 +57,15 @@ const Footer = () => {
             <div className="font-bold text-2xl">Contact Info</div>
             <div className="space-y-4 px-2">
               <div className="flex gap-4">
-                <ImLocation2 size={20} />
-                <span>SD Kristen Tabgha, Kota Batam, Kepulauan Riau</span>
+                {/* <ImLocation2 size={20} />
+                <span>SD Kristen Tabgha, Kota Batam, Kepulauan Riau</span> */}
               </div>
               <div className="flex gap-4">
-                <IoCallSharp size={20} />
-                <span>(0778) 478988</span>
+                {/* <IoCallSharp size={20} />
+                <span>(0778) 478988</span> */}
               </div>
               <div className="flex gap-4">
-                <HiMail size={20} /> <span>Sekolahkritentabgha@gmail.com</span>
+                {/* <HiMail size={20} /> <span>Sekolahkritentabgha@gmail.com</span> */}
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Footer = () => {
                   className="transition hover:opacity-75"
                 >
                   <span className="sr-only">Facebook</span>
-                  <FaFacebookF size={24} />
+                  {/* <FaFacebookF size={24} /> */}
                 </a>
               </li>
               <li>
@@ -100,7 +100,7 @@ const Footer = () => {
                   className="transition hover:opacity-75"
                 >
                   <span className="sr-only">Instagram</span>
-                  <AiFillInstagram size={24} />
+                  {/* <AiFillInstagram size={24} /> */}
                 </a>
               </li>
             </ul>
