@@ -13,6 +13,7 @@ const CardVisi = ({ image, cerdas, unggulan, beriman }) => {
               width={350}
               height={350}
               className=" opacity-80"
+              prioritas
             />
           </div>
           <div className="absolute inset-0 h-full w-full rounded text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">

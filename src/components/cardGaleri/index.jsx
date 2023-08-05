@@ -15,6 +15,7 @@ const CardGaleri = ({ cover, title, date, toggleOpenGaleri }) => {
                   width={500}
                   height={500}
                   className="rounded-t-xl h-60 object-cover w-96"
+                  prioritas
                 />
               </div>
               <div className="flex flex-col border-slate-300 py-2 px-4">

@@ -14,7 +14,7 @@ const Header = () => {
     <header className="fixed bg-white drop-shadow-xl w-full shadow shadow-black/20 h-16 flex justify-between items-center mx-auto px-32 z-20">
       <div className="flex items-center gap-4">
         <div className="w-12 h-12">
-          <Image src="/logo.png" alt="logo" width={500} height={500} />
+          <Image src="/logo.png" alt="logo" width={200} height={200} prioritas/>
         </div>
         <div className="font-light text-2xl">SDS KRISTEN TABQHA</div>
       </div>
