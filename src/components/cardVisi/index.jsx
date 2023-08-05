@@ -4,7 +4,7 @@ import React from "react";
 const CardVisi = ({ image, cerdas, unggulan, beriman }) => {
   return (
     <>
-      <div className="group w-80 h-80 [prespective:0px]">
+      <div className="group w-80 h-80 [prespective:0px] cursor-pointer">
         <div className="relative h-full w-full rounded  transform-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] [backface-visibility:hidden]">
           <div className="absolute inset-0 bg-none w-80 h-80">
             <Image loading="lazy"

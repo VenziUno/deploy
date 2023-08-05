@@ -1,9 +1,20 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import CardViewGaleri from "./cardGaleriView";
 
-const CardGaleri = ({ cover, title, date, toggleOpenGaleri }) => {
+const CardGaleri = ({id, cover, title, date}) => {
+  const [isOpenGaleri, setIsOpenGaleri] = useState(false);
+  const toggleOpenGaleri = () => {
+    setIsOpenGaleri((prevIsOpen) => !prevIsOpen);
+    if (!isOpenGaleri) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  };
   return (
     <>
+    <div className="relative">
       <div className="container ">
         <div className="h-80 w-96 bg-white drop-shadow-lg rounded-xl ">
           <div className="flex flex-col ">
@@ -28,6 +39,8 @@ const CardGaleri = ({ cover, title, date, toggleOpenGaleri }) => {
             </div>
           </div>
         </div>
+      </div>
+      {isOpenGaleri?<CardViewGaleri id={id} toggleOpenGaleri={toggleOpenGaleri}/>:null}
       </div>
     </>
   );

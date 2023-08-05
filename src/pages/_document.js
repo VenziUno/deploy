@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* preconnect scripts... */}
         <meta
           name="google-site-verification"
           content="1IoMsnjXW83fFpZ0YlMFU9EBukvRQvLCXK0nFuXxlrI"

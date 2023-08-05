@@ -33,7 +33,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white">
       <div className="mx-auto px-32 gap-12 flex p-8 justify-between divide-gray-400">
-        <div className="flex space-y-4 ">
+        <div className="flex space-y-4 items-center ">
           <div className="w-62 mt-4">
             <Image loading="lazy"
               src="/logo.png"
@@ -52,7 +52,7 @@ const Footer = () => {
               repudiandae iste ipsa!
               <span>...</span>
             </div>
-            <button className="border w-fit px-4 py-2 rounded">
+            <button className="border w-fit px-6 py-2 rounded">
               <Link href="section2" legacyBehavior>
                 <a onClick={(e) => handleClick(e, "section2")}>MORE</a>
               </Link>
@@ -65,14 +65,17 @@ const Footer = () => {
             <div className="space-y-4 px-2">
               <div className="flex gap-4">
                 {/* <ImLocation2 size={20} /> */}
+                <Image loading="lazy" src={"/map.svg"} alt="facebook" width={25} height={25}/>
                 <span>SD Kristen Tabgha, Kota Batam, Kepulauan Riau</span>
               </div>
               <div className="flex gap-4">
                 {/* <IoCallSharp size={20} /> */}
+                <Image loading="lazy" src={"/phone.svg"} alt="facebook" width={25} height={25}/>
                 <span>(0778) 478988</span>
               </div>
               <div className="flex gap-4">
                 {/* <HiMail size={20} />  */}
+                <Image loading="lazy" src={"/mail.svg"} alt="facebook" width={25} height={25}/>
                 <span>Sekolahkritentabgha@gmail.com</span>
               </div>
             </div>

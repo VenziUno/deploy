@@ -8,11 +8,6 @@ import { useState } from "react";
 import Head from "next/head";
 
 export default function Home() {
-  const [isOpenGaleri, setIsOpenGaleri] = useState(false);
-  const toggleOpenGaleri = () => {
-    setIsOpenGaleri((prevIsOpen) => !prevIsOpen);
-  };
-
   return (
     <>
       <div className="relative">
@@ -48,19 +43,19 @@ export default function Home() {
           {/* Canonical URL */}
           <link rel="canonical" href="https://www.sdskristentabqha.sch.id" />
         </Head>
-        {isOpenGaleri ? (
+        {/* {isOpenGaleri ? (
           <div className="absolute flex py-10 z-30 w-full h-full bg-black/80 overflow-y-hidden" />
         ) : (
           <></>
-        )}
+        )} */}
         <Layout>
           <HeroSection />
           <SekilasInfo />
           <VisiDanMisi />
           <Struktur />
           <Galeri
-            toggleOpenGaleri={toggleOpenGaleri}
-            isOpenGaleri={isOpenGaleri}
+            // toggleOpenGaleri={toggleOpenGaleri}
+            // isOpenGaleri={isOpenGaleri}
           />
         </Layout>
       </div>
