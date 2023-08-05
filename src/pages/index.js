@@ -1,16 +1,33 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import Layout from "@/components/layout";
+import Struktur from "./strucktur";
+import VisiDanMisi from "./visidanmisi";
+import Galeri from "./galeri";
+import SekilasInfo from "./sekilasInfo";
+import HeroSection from "./heroSection";
+import { useState } from "react";
 
 export default function Home() {
+  const [isOpenGaleri, setIsOpenGaleri] = useState(false);
+  const toggleOpenGaleri = () => {
+    setIsOpenGaleri((prevIsOpen) => !prevIsOpen);
+  };
+
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div>
-        <p>pendi</p>
+    <>
+      <div className="relative">
+        {isOpenGaleri ? (
+          <div className="absolute flex py-10 z-30 w-full h-full bg-black/80 overflow-y-hidden" />
+        ) : (
+        <></>
+        )}
+        <Layout>
+          <HeroSection />
+          <SekilasInfo />
+          <VisiDanMisi />
+          <Struktur />
+          <Galeri toggleOpenGaleri={toggleOpenGaleri} isOpenGaleri={isOpenGaleri}/>
+        </Layout>
       </div>
-    </main>
-  )
+    </>
+  );
 }
