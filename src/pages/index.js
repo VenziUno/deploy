@@ -4,13 +4,11 @@ import VisiDanMisi from "./visidanmisi";
 import Galeri from "./galeri";
 import SekilasInfo from "./sekilasInfo";
 import HeroSection from "./heroSection";
-import { useState } from "react";
 import Head from "next/head";
 
 export default function Home() {
   return (
     <>
-      <div className="relative">
         <Head>
           <meta
             name="google-site-verification"
@@ -34,6 +32,7 @@ export default function Home() {
             property="og:url"
             content="https://www.sdskristentabqha.sch.id"
           />
+          <link rel="icon" type="image/x-icon" href="/logo.png"></link>
           <link rel="canonical" href="https://www.sdskristentabqha.sch.id" />
         </Head>
         <Layout>
@@ -43,7 +42,6 @@ export default function Home() {
           <Struktur />
           <Galeri />
         </Layout>
-      </div>
     </>
   );
 }

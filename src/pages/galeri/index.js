@@ -6,7 +6,7 @@ const Galeri = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => {
-    setIsOpen((prevIsOpen) => !prevIsOpen); // Function to toggle the value of 'isOpen'.
+    setIsOpen((prevIsOpen) => !prevIsOpen);
   };
 
   return (
