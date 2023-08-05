@@ -7,13 +7,13 @@ const CardVisi = ({ image, cerdas, unggulan, beriman }) => {
       <div className="group w-80 h-80 [prespective:0px]">
         <div className="relative h-full w-full rounded  transform-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] [backface-visibility:hidden]">
           <div className="absolute inset-0 bg-none w-80 h-80">
-            <Image
+            <Image loading="lazy"
               src={image}
               alt="image"
               width={350}
               height={350}
               className=" opacity-80"
-              prioritas
+              prioritas="true"
             />
           </div>
           <div className="absolute inset-0 h-full w-full rounded text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">

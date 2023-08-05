@@ -149,7 +149,7 @@ const Galeri = ({ toggleOpenGaleri, isOpenGaleri }) => {
                       key={index}
                       className="flex bg-center bg-cover items-center justify-center rounded "
                     >
-                      <Image
+                      <Image loading="lazy"
                         key={imageIndex}
                         src={`${item.title}/${imageName}`}
                         alt=""

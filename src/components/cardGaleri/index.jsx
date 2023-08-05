@@ -9,13 +9,13 @@ const CardGaleri = ({ cover, title, date, toggleOpenGaleri }) => {
           <div className="flex flex-col ">
             <div className=" h-80 w-96">
               <div className="relative w-full">
-                <Image
+                <Image loading="lazy"
                   src={cover}
                   alt="image"
                   width={500}
                   height={500}
                   className="rounded-t-xl h-60 object-cover w-96"
-                  prioritas
+                  prioritas="true"
                 />
               </div>
               <div className="flex flex-col border-slate-300 py-2 px-4">

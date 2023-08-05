@@ -8,7 +8,7 @@ const HeroSection = () => {
       className="h-screen relative flex flex-col items-center justify-center bg-fixed bg-cover bg-center space-y-2 font-family:"
       style={{ backgroundImage: "url('/cover.jpg')" }}
     >
-      <Image src={"/logo.png"} alt="image" width={350} height={350} />
+      <Image loading="lazy" src={"/logo.png"} alt="image" width={350} height={350} />
       <div className="text-5xl">SDS KRISTEN TABQHA</div>
     </section>
   );
