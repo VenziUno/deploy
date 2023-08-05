@@ -16,34 +16,52 @@ export default function Home() {
   return (
     <>
       <div className="relative">
-      <Head>
-        {/* Page title */}
-        <title>SDS Kristen Tabqha - Sekolah Dasar Kristen Tabqha</title>
-        
-        {/* Meta tags */}
-        <meta name="description" content="Selamat datang di SDS Kristen Tabqha, sekolah dasar Kristen berkualitas yang memberikan pendidikan unggul dengan pendekatan holistik." />
-        
-        {/* Open Graph tags */}
-        <meta property="og:title" content="SDS Kristen Tabqha - Sekolah Dasar Kristen Tabqha" />
-        <meta property="og:description" content="Selamat datang di SDS Kristen Tabqha, sekolah dasar Kristen berkualitas yang memberikan pendidikan unggul dengan pendekatan holistik." />
-        <meta property="og:image" content="/path/to/og-image.jpg" />
-        <meta property="og:url" content="https://www.sdskristentabqha.sch.id" />
-        <meta name="google-site-verification" content="1IoMsnjXW83fFpZ0YlMFU9EBukvRQvLCXK0nFuXxlrI" />
-        
-        {/* Canonical URL */}
-        <link rel="canonical" href="https://www.sdskristentabqha.sch.id" />
-      </Head>
+        <Head>
+          <meta
+            name="google-site-verification"
+            content="1IoMsnjXW83fFpZ0YlMFU9EBukvRQvLCXK0nFuXxlrI"
+          />
+          {/* Page title */}
+          <title>SDS Kristen Tabqha - Sekolah Dasar Kristen Tabqha</title>
+
+          {/* Meta tags */}
+          <meta
+            name="description"
+            content="Selamat datang di SDS Kristen Tabqha, sekolah dasar Kristen berkualitas yang memberikan pendidikan unggul dengan pendekatan holistik."
+          />
+
+          {/* Open Graph tags */}
+          <meta
+            property="og:title"
+            content="SDS Kristen Tabqha - Sekolah Dasar Kristen Tabqha"
+          />
+          <meta
+            property="og:description"
+            content="Selamat datang di SDS Kristen Tabqha, sekolah dasar Kristen berkualitas yang memberikan pendidikan unggul dengan pendekatan holistik."
+          />
+          <meta property="og:image" content="/path/to/og-image.jpg" />
+          <meta
+            property="og:url"
+            content="https://www.sdskristentabqha.sch.id"
+          />
+
+          {/* Canonical URL */}
+          <link rel="canonical" href="https://www.sdskristentabqha.sch.id" />
+        </Head>
         {isOpenGaleri ? (
           <div className="absolute flex py-10 z-30 w-full h-full bg-black/80 overflow-y-hidden" />
         ) : (
-        <></>
+          <></>
         )}
         <Layout>
           <HeroSection />
           <SekilasInfo />
           <VisiDanMisi />
           <Struktur />
-          <Galeri toggleOpenGaleri={toggleOpenGaleri} isOpenGaleri={isOpenGaleri}/>
+          <Galeri
+            toggleOpenGaleri={toggleOpenGaleri}
+            isOpenGaleri={isOpenGaleri}
+          />
         </Layout>
       </div>
     </>
