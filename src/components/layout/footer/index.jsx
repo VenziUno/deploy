@@ -1,27 +1,8 @@
 import Image from "next/image";
 import React from "react";
-// import "react-icons"
-// import { ImLocation2 } from "react-icons/im";
-// import { HiMail } from "react-icons/hi";
-// import { IoCallSharp } from "react-icons/Io5";
-// import { FaFacebookF } from "react-icons/fa";
-// import { AiFillInstagram } from "react-icons/ai";
-import YouTube from "react-youtube";
 import Link from "next/link";
+import Iframe from "react-iframe";
 const Footer = () => {
-  const opts = {
-    height: "200",
-    width: "300",
-    playerVars: {
-      autoplay: 0,
-      mute: 0,
-    },
-  };
-
-  const onReady = (event) => {
-    event.target.pauseVideo();
-  };
-
   const handleClick = (e, sectionId) => {
     e.preventDefault();
     const element = document.getElementById(sectionId);
@@ -31,92 +12,152 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-800 text-white">
-      <div className="mx-auto px-32 gap-12 flex p-8 justify-between divide-gray-400">
-        <div className="flex space-y-4 items-center ">
-          <div className="w-62 mt-4">
-            <Image loading="lazy"
+    <footer className="mx-auto sm:max-w-xl bg-gray-800 text-white md:max-w-full ">
+      <div className="grid gap-4 row-gap-4 py-8 sm:grid-cols-2 lg:grid-cols-4 px-4 md:px-24 lg:px-32 items-center">
+        <div className="sm:col-span-2 space-y-4">
+          <div className="flex items-center gap-2">
+            <Image
+              className="w-10 text-deep-purple-accent-400"
+              loading="lazy"
               src="/logo.png"
               alt="logo"
               width={400}
               height={400}
               prioritas="true"
             />
-          </div>
-          <div className="space-y-4">
-            <p className="text-3xl font-bold">Sekolah Kristen Tabgha </p>
-            <div className="text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sed
-              ipsam, numquam quas modi laborum dicta iusto molestias, nulla,
-              itaque laudantium. Aliquam harum, sunt dicta nostrum earum
-              repudiandae iste ipsa!
-              <span>...</span>
-            </div>
-            <button className="border w-fit px-6 py-2 rounded">
-              <Link href="section2" legacyBehavior>
-                <a onClick={(e) => handleClick(e, "section2")}>MORE</a>
-              </Link>
-            </button>
-          </div>
-        </div>
-        <div className="flex items-center">
-          <div className="space-y-6">
-            <div className="font-bold text-2xl">Contact Info</div>
-            <div className="space-y-4 px-2">
-              <div className="flex gap-4">
-                {/* <ImLocation2 size={20} /> */}
-                <Image loading="lazy" src={"/map.svg"} alt="facebook" width={25} height={25}/>
-                <span>SD Kristen Tabgha, Kota Batam, Kepulauan Riau</span>
-              </div>
-              <div className="flex gap-4">
-                {/* <IoCallSharp size={20} /> */}
-                <Image loading="lazy" src={"/phone.svg"} alt="facebook" width={25} height={25}/>
-                <span>(0778) 478988</span>
-              </div>
-              <div className="flex gap-4">
-                {/* <HiMail size={20} />  */}
-                <Image loading="lazy" src={"/mail.svg"} alt="facebook" width={25} height={25}/>
-                <span>Sekolahkritentabgha@gmail.com</span>
-              </div>
+            <div className="text-xl font-bold tracking-wide uppercase">
+              SDS Kristen Tabqha
             </div>
           </div>
+          <div className="text-sm text-justify">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam.Sed ut
+            perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam.
+          </div>
+          <button className="transition ease-in delay-150 hover:-translate-y-1 hover:scale-105 duration-300 border w-full p-2 text-xs sm:w-fit sm:px-6 rounded">
+            <Link href="section2" legacyBehavior>
+              <a onClick={(e) => handleClick(e, "section2")}>MORE</a>
+            </Link>
+          </button>
         </div>
-        <div className="flex items-center">
-          <div>
-            <YouTube videoId={"h-PfBxoMq_4"} opts={opts} onReady={onReady} />
+        <div className="space-y-2 space-x-4 text-sm">
+          <p className="text-base font-bold tracking-wide ">Contacts</p>
+          <div className="flex gap-2">
+            <Image
+              className="text-deep-purple-accent-400"
+              loading="lazy"
+              src="/phone.svg"
+              alt="logo"
+              width={25}
+              height={25}
+              prioritas="true"
+            />
+            <a
+              href="tel:(0778) 478988"
+              aria-label="Our phone"
+              title="Our phone"
+              className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              (0778) 478988
+            </a>
+          </div>
+          <div className="flex gap-2">
+            <Image
+              className="text-deep-purple-accent-400"
+              loading="lazy"
+              src="/mail.svg"
+              alt="logo"
+              width={25}
+              height={25}
+              prioritas="true"
+            />
+            <a
+              href="mailto:info@lorem.mail"
+              aria-label="Our email"
+              title="Our email"
+              className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              sdskritentabgha@gmail.com
+            </a>
+          </div>
+          <div className="flex gap-2">
+            <Image
+              className="text-deep-purple-accent-400"
+              loading="lazy"
+              src="/map.svg"
+              alt="logo"
+              width={25}
+              height={25}
+              prioritas="true"
+            />
+            <a
+              href="https://www.google.com/maps"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Our address"
+              title="Our address"
+              className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              SD Kristen Tabgha, Kota Batam, Kepulauan Riau
+            </a>
+          </div>
+        </div>
+        <div className="w-full flex flex-col justify-center">
+          <div className="flex items-center mt-1 space-x-3 justify-center">
+            <Iframe
+              url="http://www.youtube.com/embed/0I8qeXFrOeI"
+              id="0I8qeXFrOeI"
+              className="w-full h-full"
+              width="100%"
+              height="100%"
+              display="block"
+              position="relative"
+            />
           </div>
         </div>
       </div>
-      <div className="border-t-2 border-gray-400">
-        <div className=" px-32 text-white flex flex-col justify-between p-4 lg:flex-row divide-gray-400">
-          <div>Copyright © 2023 - SDS Kristen Tabgha.</div>
-          <div>
-            <ul className="flex gap-6">
-              <li>
-                <a
-                  href="https://www.facebook.com/kristen.tabgha.5"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="transition hover:opacity-75 text-white"
-                >
-                  <span className="sr-only">Facebook</span>
-                  <Image loading="lazy" src={"/facebook-square.svg"} alt="facebook" width={25} height={25}/>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/tabgha.school/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="transition hover:opacity-75 text-white"
-                >
-                  <span className="sr-only">Instagram</span>
-                  <Image loading="lazy" src={"/instagram-fill.svg"} alt="facebook" width={25} height={25}/>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div className="border-t" />
+      <div className="flex flex-col-reverse items-center gap-2 justify-between py-5 sm:flex-row px-2 md:px-24 lg:px-32">
+        <p className="text-xs ">
+          © Copyright 2023 SDS KRISTEN TABQHA. All rights reserved.
+        </p>
+        <ul className="flex justify-center gap-2 lg:mb-0 sm:space-y-0 sm:space-x-5 flex-row">
+          <li>
+            <a
+              href="https://www.facebook.com/kristen.tabgha.5"
+              rel="noreferrer"
+              target="_blank"
+              className="transition hover:opacity-75 text-white"
+            >
+              <span className="sr-only">Facebook</span>
+              <Image
+                loading="lazy"
+                src={"/facebook-square.svg"}
+                alt="facebook"
+                width={25}
+                height={25}
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/tabgha.school/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
+              rel="noreferrer"
+              target="_blank"
+              className="transition hover:opacity-75 text-white"
+            >
+              <span className="sr-only">Instagram</span>
+              <Image
+                loading="lazy"
+                src={"/instagram-fill.svg"}
+                alt="facebook"
+                width={25}
+                height={25}
+              />
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   );

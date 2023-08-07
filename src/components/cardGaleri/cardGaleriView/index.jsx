@@ -272,7 +272,7 @@ const CardViewGaleri = ({ toggleOpenGaleri, id }) => {
             }}
             navigation={true}
             modules={[Keyboard, Pagination, Navigation]}
-            className="w-[800px] h-[500px]"
+            className="xl:w-[800px] xl:h-[500px] lg:w-[600px] lg:h-[375px] w-[400px] h-[250px]"
           >
             {gallery.image.map((imageName, imageIndex) => (
               <SwiperSlide

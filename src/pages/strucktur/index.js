@@ -17,9 +17,7 @@ export default function Struktur() {
           </div>
           <div className="flex space-x-4 pt-4">
             <CardStrukur
-              image={
-                "/staff/avatars.jpg"
-              }
+              image={"/staff/avatars.jpg"}
               title={"KEPALA YAYASAN"}
             />
           </div>
@@ -44,94 +42,68 @@ export default function Struktur() {
           </div>
           <div className="flex space-x-4 ">
             <CardStrukur
-              image={
-                "/staff/avatars.jpg"
-              }
+              image={"/staff/avatars.jpg"}
               title={"Wakil Kepala Sekolah"}
             />
           </div>
         </div>
         <div className="flex flex-col pt-6 space-y-4 justify-center items-center">
-          <div className="text-xl  border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
+          <div className="text-xl border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
             STAFF SDS KRISTEN TABQHA
           </div>
-          <div className="flex space-x-4 ">
+          <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
             <CardStrukur
-              image={
-                "/staff/Januari Wahandi Nababan, S.Kom (Bagian Kesiswaan )-fotor-bg-remover-20230802103621.png"
-              }
-              name={"Januari W.N., S.Kom"}
+              image="/staff/Januari Wahandi Nababan, S.Kom (Bagian Kesiswaan )-fotor-bg-remover-20230802103621.png"
+              name="Januari W.N., S.Kom"
               title="Staff Kesiswaan"
             />
             <CardStrukur
-              image={
-                "/staff/Endang Ria Pulisa, S.S (Bagian Kesiswaan)-fotor-bg-remover-20230802101117.png"
-              }
-              name={"Endang Ria Pulisa, S.s"}
-              title={"Bagian Kesiswaan"}
+              image="/staff/Endang Ria Pulisa, S.S (Bagian Kesiswaan)-fotor-bg-remover-20230802101117.png"
+              name="Endang Ria Pulisa, S.s"
+              title="Bagian Kesiswaan"
             />
             <CardStrukur
-              image={
-                "/staff/Victoria Silvia Kharolin S.Pd ( Bagian Kurikulum )-fotor-bg-remover-20230802104249.png"
-              }
-              name={"Victoria Silvia K., S.Pd"}
-              title={"Bagian Kurikulum"}
+              image="/staff/Victoria Silvia Kharolin S.Pd ( Bagian Kurikulum )-fotor-bg-remover-20230802104249.png"
+              name="Victoria Silvia K., S.Pd"
+              title="Bagian Kurikulum"
             />
             <CardStrukur
-              image={
-                "/staff/Destiana Simangunsong, S.Pd( Bagian Kurikulum )-fotor-bg-remover-20230802101147.png"
-              }
-              name={"Destiana S., S.Pd"}
-              title={"Bagian Kurikulum"}
-            />
-          </div>
-
-          <div className="flex space-x-4">
-            <CardStrukur
-              image={
-                "/staff/Selestina Koli Bau, S.Pd (Koordinator English Kelas 1,2,3)-fotor-bg-remover-2023080210426.png"
-              }
-              name={"Selestina Koli B., S.Pd"}
-              title={"Koordinator English"}
-            />
-            <CardStrukur hidden />
-            <CardStrukur hidden />
-            <CardStrukur
-              image={
-                "/staff/Riama Elisabet, S.S ( Koordinator English kls  4,5,6)-fotor-bg-remover-20230802104047.png"
-              }
-              name={"Riama Elisabet, S.S"}
-              title={"Koordinator English"}
-            />
-          </div>
-          <div className="flex space-x-4">
-            <CardStrukur
-              image={
-                "/staff/Anjesmara Sinaga ( Staff Perpustakaan )-fotor-bg-remover-2023080210928.png"
-              }
-              name={"Anjesmara S."}
-              title={"Staff Perpustakaan"}
+              image="/staff/Destiana Simangunsong, S.Pd( Bagian Kurikulum )-fotor-bg-remover-20230802101147.png"
+              name="Destiana S., S.Pd"
+              title="Bagian Kurikulum"
             />
             <CardStrukur
-              image={
-                "/staff/Miranda Olivia Siregar, S.Ap ( Staff Admin )-fotor-bg-remover-20230802103834.png"
-              }
-              name={"Miranda Olivia S., S.Ap"}
-              title={"Staff Admin"}
+              image="/staff/Selestina Koli Bau, S.Pd (Koordinator English Kelas 1,2,3)-fotor-bg-remover-2023080210426.png"
+              name="Selestina Koli B., S.Pd"
+              title="Koordinator English"
             />
             <CardStrukur
-              image={
-                "/staff/Frisicilia Cynthia Sagune, A.Md ( Staff Admin )-fotor-bg-remover-2023080210350.png"
-              }
-              name={"Frisicilia Cynthia S., A.Md"}
-              title={"Staff Admin"}
+              image="/staff/Riama Elisabet, S.S ( Koordinator English kls  4,5,6)-fotor-bg-remover-20230802104047.png"
+              name="Riama Elisabet, S.S"
+              title="Koordinator English"
+              className="lg:col-end-5"
             />
             <CardStrukur
-              image={
-                "/staff/Jerry Kristian, A.Md ( Staff Admin )-fotor-bg-remover-20230802103633.png"
-              }
-              name={"Jerry Kristian, A.Md"}
-              title={"Staff Admin"}
+              image="/staff/Anjesmara Sinaga ( Staff Perpustakaan )-fotor-bg-remover-2023080210928.png"
+              name="Anjesmara S."
+              title="Staff Perpustakaan"
+              className="lg:col-end-2 "
+            />
+            <CardStrukur
+              image="/staff/Miranda Olivia Siregar, S.Ap ( Staff Admin )-fotor-bg-remover-20230802103834.png"
+              name="Miranda Olivia S., S.Ap"
+              title="Staff Admin"
+            />
+            <CardStrukur
+              image="/staff/Frisicilia Cynthia Sagune, A.Md ( Staff Admin )-fotor-bg-remover-2023080210350.png"
+              name="Frisicilia Cynthia S., A.Md"
+              title="Staff Admin"
+            />
+            <CardStrukur
+              image="/staff/Jerry Kristian, A.Md ( Staff Admin )-fotor-bg-remover-20230802103633.png"
+              name="Jerry Kristian, A.Md"
+              title="Staff Admin"
+              className="lg:col-end-auto md:col-end-3"
             />
           </div>
         </div>
@@ -139,7 +111,7 @@ export default function Struktur() {
           <div className="text-xl  border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
             GURU SDS KRISTEN TABQHA
           </div>
-          <div className="flex space-x-4 ">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
             <CardStrukur
               image={
                 "/staff/Lenni Betsaulina Sijabat, S.Pd ( Wali Kelas 1A )-fotor-bg-remover-20230802103927.png"
@@ -180,8 +152,6 @@ export default function Struktur() {
               name={"Sedina Manik, S.Pd"}
               title={"Wali Kelas 2C"}
             />
-          </div>
-          <div className="flex space-x-4 ">
             <CardStrukur
               image={
                 "/staff/Ivone Novriyanti Parhusip, S.Pd (Wali Kelas 3A)-fotor-bg-remover-20230802103613.png"
@@ -222,8 +192,6 @@ export default function Struktur() {
               name="A. M. Hutasoit, S.Pd"
               title="Wali Kelas 4 C"
             />
-          </div>
-          <div className="flex space-x-4 ">
             <CardStrukur
               image={
                 "/staff/Eltita Natalia, S.Pd(Wali Kelas 5A)-fotor-bg-remover-20230802101129.png"
@@ -266,8 +234,6 @@ export default function Struktur() {
               name={"Tuti Kristianti, S.Si"}
               title={"Wali Kelas 6C"}
             />
-          </div>
-          <div className="flex space-x-4 ">
             <CardStrukur
               image={
                 "/staff/Heru Setiawan Girsang, S.Pd ( Guru Bid. Studi Matematika _ IPAS )-fotor-bg-remover-20230802103536.png"
@@ -282,11 +248,7 @@ export default function Struktur() {
               name={"Rinchart Labang K., S.si"}
               title={"Guru Bidang Studi"}
             />
-            <CardStrukur
-              image={
-                "/staff/avatars.jpg"
-              }
-            />
+            <CardStrukur image={"/staff/avatars.jpg"} />
             <CardStrukur
               image={
                 "/staff/Kembali Pardede, M.Min., M.Th (Guru Bid. Studi Agama)-fotor-bg-remover-20230802103913.png"
@@ -308,13 +270,7 @@ export default function Struktur() {
               name={"Serdalina Limbong, S.Pd"}
               title={"Guru Bidang Studi"}
             />
-          </div>
-          <div className="flex space-x-4 ">
-            <CardStrukur
-              image={
-                "/staff/avatars.jpg"
-              }
-            />
+            <CardStrukur image={"/staff/avatars.jpg"} />
             <CardStrukur
               image={
                 "/staff/Rosmayanti Sinaga, S.Pd (Guru Bid. Studi Bhs. Indonesia _ PKN)-fotor-bg-remover-20230802104144.png"
@@ -322,19 +278,14 @@ export default function Struktur() {
               name={"Rosmayanti Sinaga, S.Pd"}
               title={"Guru Bidang Studi"}
             />
-            <CardStrukur hidden />
-            <CardStrukur hidden />
-            <CardStrukur
-              image={
-                "/staff/avatars.jpg"
-              }
-            />
+            <CardStrukur image={"/staff/avatars.jpg"} className="xl:col-end-6"/>
             <CardStrukur
               image={
                 "/staff/Pirmahot Junedi Tambunan, S.Pd ( Guru Bid. Studi PJOK )-fotor-bg-remover-20230802103851.png"
               }
               name={"Primahot Junedi T., S.Pd"}
               title={"Guru Bidang Studi"}
+              className="md:col-end-3 lg:col-auto xl:col-end-7"
             />
           </div>
         </div>

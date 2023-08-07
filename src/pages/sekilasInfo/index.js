@@ -10,9 +10,9 @@ const SekilasInfo = () => {
   return (
     <section
       id="section2"
-      className=" py-20 min-h-screen flex items-center justify-center px-32"
+      className=" py-20 flex items-center justify-center  max-h-fit px-8 lg:px-16 xl:px-32"
     >
-      <div className="flex flex-col items-center justify-center text-justify space-y-4">
+      <div className="flex flex-col items-center max-w-[1440px] justify-center text-justify space-y-4">
         <h1 className="text-3xl font-semibold border-b-2 border-black px-4">SekilasInfo</h1>
         <p className="text-xl">
           SD Kristen Tabqha adalah sebuah Sekolah Dasar swasta yang terletak di
@@ -27,7 +27,7 @@ const SekilasInfo = () => {
           menghasilkan lulusan yang memiliki wawasan luas serta kualitas
           kepribadian yang baik.
         </p>
-        <p className="text-xl">
+        <p className="text-xl hidden lg:block">
           Selain itu, SD Kristen Tabqha juga turut berperan aktif dalam kegiatan
           ekstrakurikuler dan pengembangan bakat siswa. Dengan beragam pilihan
           kegiatan di luar jam pelajaran, siswa memiliki kesempatan untuk
@@ -42,7 +42,18 @@ const SekilasInfo = () => {
         </p>
         <div className="flex">
           <Swiper
-            slidesPerView={3}
+            breakpoints={{
+              // when window width is >= 640px
+              640: {
+                slidesPerView: 1,
+              },
+              1024: {
+                slidesPerView: 2,
+              },
+              1440: {
+                slidesPerView: 3,
+              },
+            }}
             spaceBetween={30}
             keyboard={{
               enabled: true,
@@ -52,7 +63,7 @@ const SekilasInfo = () => {
             }}
             navigation={true}
             modules={[Keyboard, Pagination, Navigation]}
-            className="w-[1200px] h-[300px]"
+            className="w-[400px] h-[300px] lg:w-[800px] lg:h-[300px] xl:w-[1200px] xl:h-[300px]"
           >
             <SwiperSlide
               className="flex bg-center bg-cover items-center justify-center rounded "
@@ -61,8 +72,8 @@ const SekilasInfo = () => {
                 loading="lazy"
                 src={"/cover.jpg"}
                 alt=""
-                width={500}
-                height={500}
+                width={2000}
+                height={1000}
                 className="w-full h-full block p-12 hover:animate-bounce cursor-pointer rounded-xl"
               />
             </SwiperSlide>
@@ -73,8 +84,8 @@ const SekilasInfo = () => {
                 loading="lazy"
                 src={"/cover.jpg"}
                 alt=""
-                width={500}
-                height={500}
+                width={2000}
+                height={1000}
                 className="w-full h-full block p-12 hover:animate-bounce cursor-pointer rounded-xl"
               />
             </SwiperSlide>
@@ -85,8 +96,8 @@ const SekilasInfo = () => {
                 loading="lazy"
                 src={"/cover.jpg"}
                 alt=""
-                width={500}
-                height={500}
+                width={2000}
+                height={1000}
                 className="w-full h-full block p-12 hover:animate-bounce cursor-pointer rounded-xl"
               />
             </SwiperSlide>
