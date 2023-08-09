@@ -8,11 +8,11 @@ export default function Struktur() {
       className=" relative pt-20 flex items-center justify-center flex-col space-y-4"
     >
       <div className="flex flex-col justify-center items-center">
-        <div className="text-3xl border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
+        <div className="text-lg md:text-3xl border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
           BAGAN STRUKTUR ORGANISASI SDS KRISTEN TABQHA
         </div>
         <div className="flex flex-col pt-6 space-y-4 justify-center items-center">
-          <div className="text-xl  border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
+          <div className="text-sm md:text-xl  border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
             KEPALA YAYASAN SEKOLAH KRISTEN TABQHA
           </div>
           <div className="flex space-x-4 pt-4">
@@ -23,7 +23,7 @@ export default function Struktur() {
           </div>
         </div>
         <div className="flex flex-col pt-6 space-y-4 justify-center items-center">
-          <div className="text-xl border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
+          <div className="text-sm md:text-xl border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
             KEPALA SDS KRISTEN TABQHA
           </div>
           <div className="flex space-x-4 pt-4">
@@ -37,7 +37,7 @@ export default function Struktur() {
           </div>
         </div>
         <div className="flex flex-col pt-6 space-y-4 justify-center items-center">
-          <div className="text-xl border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
+          <div className="text-sm md:text-xl border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
             WAKIL KEPALA SDS KRISTEN TABQHA
           </div>
           <div className="flex space-x-4 ">
@@ -48,10 +48,10 @@ export default function Struktur() {
           </div>
         </div>
         <div className="flex flex-col pt-6 space-y-4 justify-center items-center">
-          <div className="text-xl border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
+          <div className="text-sm md:text-xl border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
             STAFF SDS KRISTEN TABQHA
           </div>
-          <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
             <CardStrukur
               image="/staff/Januari Wahandi Nababan, S.Kom (Bagian Kesiswaan )-fotor-bg-remover-20230802103621.png"
               name="Januari W.N., S.Kom"
@@ -108,7 +108,7 @@ export default function Struktur() {
           </div>
         </div>
         <div className="flex flex-col pt-6 space-y-4 justify-center items-center">
-          <div className="text-xl  border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
+          <div className="text-sm md:text-xl  border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
             GURU SDS KRISTEN TABQHA
           </div>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
