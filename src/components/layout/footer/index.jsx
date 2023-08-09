@@ -105,15 +105,7 @@ const Footer = () => {
         </div>
         <div className="w-full flex flex-col justify-center">
           <div className="flex items-center mt-1 space-x-3 justify-center">
-            <Iframe
-              url="http://www.youtube.com/embed/0I8qeXFrOeI"
-              id="0I8qeXFrOeI"
-              className="w-full h-full"
-              width="100%"
-              height="100%"
-              display="block"
-              position="relative"
-            />
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0I8qeXFrOeI"/>
           </div>
         </div>
       </div>
