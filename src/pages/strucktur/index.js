@@ -17,8 +17,11 @@ export default function Struktur() {
           </div>
           <div className="flex space-x-4 pt-4">
             <CardStrukur
-              image={"/staff/avatars.jpg"}
-              title={"KEPALA YAYASAN"}
+              image={
+                "/staff/Alfred Stephen Andries, B.A. (Ketua Yayasan Komunitas Kasih Indonesia)-fotor-bg-remover-20230810112531.png"
+              }
+              name={"Alfred Stephen Andries, B.A."}
+              title={"Ketua Yayasan Komunitas Kasih Indonesia"}
             />
           </div>
         </div>
@@ -248,7 +251,13 @@ export default function Struktur() {
               name={"Rinchart Labang K., S.si"}
               title={"Guru Bidang Studi"}
             />
-            <CardStrukur image={"/staff/avatars.jpg"} />
+            <CardStrukur
+              image={
+                "/staff/Mr. Suryanto ( Guru Bid. Studi Mandarin )-fotor-bg-remover-20230810112514.png"
+              }
+              name={"Suryanto"}
+              title={"Guru Bidang Studi"}
+            />
             <CardStrukur
               image={
                 "/staff/Kembali Pardede, M.Min., M.Th (Guru Bid. Studi Agama)-fotor-bg-remover-20230802103913.png"
@@ -270,7 +279,13 @@ export default function Struktur() {
               name={"Serdalina Limbong, S.Pd"}
               title={"Guru Bidang Studi"}
             />
-            <CardStrukur image={"/staff/avatars.jpg"} />
+            <CardStrukur
+              image={
+                "/staff/Ms. Rita (Guru Bidang Studi Mandarin) (1)-fotor-bg-remover-2023081011256.png"
+              }
+              name={"Rita"}
+              title={"Guru Bidang Studi"}
+            />
             <CardStrukur
               image={
                 "/staff/Rosmayanti Sinaga, S.Pd (Guru Bid. Studi Bhs. Indonesia _ PKN)-fotor-bg-remover-20230802104144.png"
@@ -278,7 +293,10 @@ export default function Struktur() {
               name={"Rosmayanti Sinaga, S.Pd"}
               title={"Guru Bidang Studi"}
             />
-            <CardStrukur image={"/staff/avatars.jpg"} className="xl:col-end-6"/>
+            <CardStrukur
+              image={"/staff/avatars.jpg"}
+              className="xl:col-end-6"
+            />
             <CardStrukur
               image={
                 "/staff/Pirmahot Junedi Tambunan, S.Pd ( Guru Bid. Studi PJOK )-fotor-bg-remover-20230802103851.png"
