@@ -30,10 +30,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-sm text-justify">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam.Sed ut
-            perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            doloremque laudantium, totam rem aperiam.
+            SD Kristen Tabqha adalah sebuah Sekolah Dasar swasta yang terletak
+            di Batam, Provinsi Kepulauan Riau. Mirip dengan pola pendidikan SD
+            pada umumnya di Indonesia, sekolah ini menawarkan program pendidikan
+            selama enam tahun pelajaran, mulai dari Kelas I hingga Kelas VI.
           </div>
           <button className="transition ease-in delay-150 hover:-translate-y-1 hover:scale-105 duration-300 border w-full p-2 text-xs sm:w-fit sm:px-6 rounded">
             <Link href="section2" legacyBehavior>
@@ -54,7 +54,7 @@ const Footer = () => {
               prioritas="true"
             />
             <a
-              href="tel:(0778) 478988"
+              href="tel:0778478988"
               aria-label="Our phone"
               title="Our phone"
               className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
@@ -73,12 +73,12 @@ const Footer = () => {
               prioritas="true"
             />
             <a
-              href="mailto:info@lorem.mail"
+              href="mailto:sdskritentabgha@sdskritentabgha.sch.id"
               aria-label="Our email"
               title="Our email"
               className="transition-colors duration-300 text-deep-purple-accent-400 hover:text-deep-purple-800"
             >
-              sdskritentabgha@gmail.com
+              sdskritentabgha@sdskritentabgha.sch.id
             </a>
           </div>
           <div className="flex gap-2">
@@ -92,7 +92,7 @@ const Footer = () => {
               prioritas="true"
             />
             <a
-              href="https://www.google.com/maps"
+              href="https://www.google.com/maps/place/SMP+Kristen+Tabqha/@1.1128096,104.0370385,17z/data=!3m1!4b1!4m6!3m5!1s0x31d9893aee6b118d:0xc85e507a07d06a80!8m2!3d1.1128096!4d104.0396134!16s%2Fg%2F11r7pxfdc?entry=ttu"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Our address"
@@ -105,7 +105,11 @@ const Footer = () => {
         </div>
         <div className="w-full flex flex-col justify-center">
           <div className="flex items-center mt-1 space-x-3 justify-center">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/0I8qeXFrOeI"/>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/MdfmUW-QFE8"
+            />
           </div>
         </div>
       </div>
