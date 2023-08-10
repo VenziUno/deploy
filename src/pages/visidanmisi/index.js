@@ -1,8 +1,35 @@
 import CardVisi from "@/components/cardVisi";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Keyboard, Pagination, Navigation, Mousewheel } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-flip";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const VisiDanMisi = () => {
+  const [shouldShowSwiper, setShouldShowSwiper] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setShouldShowSwiper(false);
+      } else {
+        setShouldShowSwiper(true);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  console.log(shouldShowSwiper)
+
   return (
     <section
       id="section3"
@@ -25,26 +52,75 @@ const VisiDanMisi = () => {
             “Terwujudnya Peserta Didik yang Cerdas, Unggul, dan Beriman Sesuai
             Dengan Nilai-Nilai Kristiani”
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 px-4 lg:px-12">
-            <div className="bg-white/70 p-4 rounded-xl flex flex-col items-center">
-              <div className="mb-4">Cerdas</div>
-              <CardVisi image="/cerdass.jpg" cerdas />
+          {shouldShowSwiper ? (
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 px-4 lg:px-12">
+              <div className="bg-white/70 p-4 rounded-xl flex flex-col items-center">
+                <div className="mb-4">Cerdas</div>
+                <CardVisi image="/cerdass.jpg" cerdas />
+              </div>
+              <div className="bg-white/70 p-4 rounded-xl flex flex-col items-center">
+                <div className="mb-4">Unggul</div>
+                <CardVisi image="/unggulans.jpg" unggulan />
+              </div>
+              <div className="bg-white/70 p-4 rounded-xl flex flex-col items-center md:col-start-1 md:col-end-3 xl:col-auto">
+                <div className="mb-4">Beriman</div>
+                <CardVisi image="/berimans.jpg" beriman />
+              </div>
             </div>
-            <div className="bg-white/70 p-4 rounded-xl flex flex-col items-center">
-              <div className="mb-4">Unggul</div>
-              <CardVisi image="/unggulans.jpg" unggulan />
-            </div>
-            <div className="bg-white/70 p-4 rounded-xl flex flex-col items-center md:col-start-1 md:col-end-3 xl:col-auto">
-              <div className="mb-4">Beriman</div>
-              <CardVisi image="/berimans.jpg" beriman />
-            </div>
-          </div>
+          ) : (
+            <Swiper
+              breakpoints={{
+                // when window width is >= 640px
+                640: {
+                  slidesPerView: 1,
+                },
+                1024: {
+                  slidesPerView: 2,
+                },
+                1440: {
+                  slidesPerView: 3,
+                },
+              }}
+              spaceBetween={30}
+              keyboard={{
+                enabled: true,
+              }}
+              Mousewheel={{
+                enabled: true,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              // navigation={true}
+              modules={[Keyboard, Mousewheel, Pagination, Navigation]}
+              className="w-[380px] h-[400px] lg:w-[800px] lg:h-[300px] xl:w-[1200px] xl:h-[300px]"
+            >
+              <SwiperSlide className="flex bg-center bg-cover items-center justify-center rounded ">
+                <div className="bg-white/70 p-4 rounded-xl flex flex-col items-center">
+                  <div className="mb-4">Cerdas</div>
+                  <CardVisi image="/cerdass.jpg" cerdas />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="flex bg-center bg-cover items-center justify-center rounded ">
+                <div className="bg-white/70 p-4 rounded-xl flex flex-col items-center">
+                  <div className="mb-4">Unggul</div>
+                  <CardVisi image="/unggulans.jpg" unggulan />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="flex bg-center bg-cover items-center justify-center rounded ">
+                <div className="bg-white/70 p-4 rounded-xl flex flex-col items-center md:col-start-1 md:col-end-3 xl:col-auto">
+                  <div className="mb-4">Beriman</div>
+                  <CardVisi image="/berimans.jpg" beriman />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          )}
         </div>
         <div className="backdrop-blur-sm backdrop-opacity-80 bg-gradient-to-l from-white/50 to-slate-300/50 py-6 rounded-2xl shadow text-xl font-light flex flex-col justify-center items-center space-y-4">
           <div className="border-b-2 border-black px-4">
             MISI SDS KRISTEN TABQHA
           </div>
-          <div className="px-12 text-justify">
+          <div className="px-4 md:px-12 lg:text-justify">
             <ul className="border text-ellipsis list-disc text-lg px-8 py-2 rounded-2xl bg-white/70">
               <li>
                 Melaksanakan pembelajaran yang aktif, kreatif, inovatif, dan
@@ -83,6 +159,7 @@ const VisiDanMisi = () => {
                 ilmiah, dan soft skill.
               </li>
             </ul>
+            
           </div>
         </div>
       </div>

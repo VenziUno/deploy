@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Keyboard, Pagination, Navigation } from "swiper/modules";
+import { Keyboard, Pagination, Navigation, Mousewheel } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-flip";
 import "swiper/css/pagination";
@@ -14,7 +14,7 @@ const SekilasInfo = () => {
     >
       <div className="flex flex-col items-center max-w-[1440px] justify-center text-justify space-y-4">
         <h1 className="text-3xl font-semibold border-b-2 border-black px-4">SekilasInfo</h1>
-        <p className="text-xl">
+        <p className="md:text-xl text-lg px-6">
           SD Kristen Tabqha adalah sebuah Sekolah Dasar swasta yang terletak di
           Batam, Provinsi Kepulauan Riau. Mirip dengan pola pendidikan SD pada
           umumnya di Indonesia, sekolah ini menawarkan program pendidikan selama
@@ -27,7 +27,7 @@ const SekilasInfo = () => {
           menghasilkan lulusan yang memiliki wawasan luas serta kualitas
           kepribadian yang baik.
         </p>
-        <p className="text-xl hidden lg:block">
+        <p className="md:text-xl text-lg px-6 hidden lg:block">
           Selain itu, SD Kristen Tabqha juga turut berperan aktif dalam kegiatan
           ekstrakurikuler dan pengembangan bakat siswa. Dengan beragam pilihan
           kegiatan di luar jam pelajaran, siswa memiliki kesempatan untuk
@@ -58,12 +58,15 @@ const SekilasInfo = () => {
             keyboard={{
               enabled: true,
             }}
+            mousewheel={{
+              enabled: true,
+            }}
             pagination={{
               clickable: true,
             }}
-            navigation={true}
-            modules={[Keyboard, Pagination, Navigation]}
-            className="w-[400px] h-[300px] lg:w-[800px] lg:h-[300px] xl:w-[1200px] xl:h-[300px]"
+            // navigation={true}
+            modules={[Keyboard,Mousewheel, Pagination, Navigation]}
+            className="w-[300px] h-[250px] sm:w-[400px] sm:h-[300px] lg:w-[800px] lg:h-[300px] xl:w-[1200px] xl:h-[300px]"
           >
             <SwiperSlide
               className="flex bg-center bg-cover items-center justify-center rounded "

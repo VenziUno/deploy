@@ -8,7 +8,7 @@ export default function Struktur() {
       className=" relative pt-20 flex items-center justify-center flex-col space-y-4"
     >
       <div className="flex flex-col justify-center items-center">
-        <div className="text-lg md:text-3xl border-b-2 border-spacing-2 antialiased border-slate-500 font-light">
+        <div className="text-md md:text-3xl border-b-2 md:border-spacing-2 antialiased border-slate-500 font-light">
           BAGAN STRUKTUR ORGANISASI SDS KRISTEN TABQHA
         </div>
         <div className="flex flex-col pt-6 space-y-4 justify-center items-center">
