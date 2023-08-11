@@ -28,8 +28,6 @@ const VisiDanMisi = () => {
     };
   }, []);
 
-  console.log(shouldShowSwiper)
-
   return (
     <section
       id="section3"
@@ -85,7 +83,7 @@ const VisiDanMisi = () => {
               keyboard={{
                 enabled: true,
               }}
-              Mousewheel={{
+              mousewheel={{
                 enabled: true,
               }}
               pagination={{

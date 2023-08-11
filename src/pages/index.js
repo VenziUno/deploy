@@ -19,6 +19,7 @@ export default function Home() {
           content="1IoMsnjXW83fFpZ0YlMFU9EBukvRQvLCXK0nFuXxlrI"
         />
         <title>SDS Kristen Tabqha - Sekolah Dasar Kristen Tabqha</title>
+        <meta name="author" content="SDS KriSten Tabqha"></meta>
         <meta
           name="description"
           content="Selamat datang di SDS Kristen Tabqha, sekolah dasar Kristen berkualitas yang memberikan pendidikan unggul dengan pendekatan holistik."
@@ -27,6 +28,7 @@ export default function Home() {
           property="og:title"
           content="SDS Kristen Tabqha - Sekolah Dasar Kristen Tabqha"
         />
+        <meta property="og:site_name" content="SDS KriSten Tabqha" />
         <meta
           property="og:description"
           content="Selamat datang di SDS Kristen Tabqha, sekolah dasar Kristen berkualitas yang memberikan pendidikan unggul dengan pendekatan holistik."
