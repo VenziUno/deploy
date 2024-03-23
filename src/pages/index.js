@@ -7,6 +7,7 @@ import SekilasInfo from "./sekilasInfo";
 import VisiDanMisi from "./visidanmisi";
 import Struktur from "./strucktur";
 import Head from "next/head";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -44,6 +45,7 @@ export default function Home() {
         <VisiDanMisi />
         <Struktur />
         <Galeri />
+        <SpeedInsights />
       </Layout>
     </>
   );
